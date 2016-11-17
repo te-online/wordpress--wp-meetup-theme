@@ -1,7 +1,13 @@
+# Coding My First Theme
+This file is a *cheatsheet* for you, to copy & paste dynamic contents that are often used for building a small WordPress theme.
+
+***Purpose:***
+This repository was created as a collection of the files that were shown and used in November 2016's sessions at [WordPress Meetup Osnabrück & Münster](http://www.wpmeetup-osnabrueck.de/) in Münster.
+
 # style.css
 ```
 /*
-Theme Name: Twenty Seventeen
+Theme Name: Your Fancy Theme Name
 Theme URI: http://wordpress.org/themes/twentythirteen
 Author: the WordPress team
 Author URI: http://wordpress.org/
@@ -10,7 +16,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
+Text Domain: meetup
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -73,7 +79,7 @@ if ( $site_description && ( is_home() || is_front_page() ) )
 * Header Hero-Image
 
 ```
-<?php header_image(); ?>
+<img src="<?php header_image(); ?>" alt="Header Image for <?php bloginfo('name'); ?>" />
 ```
 
 * Activation of Header-Image in **functions.php**
@@ -260,3 +266,6 @@ add_action( 'init', 'meetup_register_sidebars' );
 ```
 <?php wp_footer(); ?>
 ```
+
+
+[www.te-online.net](https://www.te-online.net/)
